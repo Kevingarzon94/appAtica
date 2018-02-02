@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/kevin/appaticaconductor/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-mdpi/background.png",
+        "source": "/home/kevin/appaticaconductor/platforms/android/app/src/main/res/drawable-mdpi/background.png"
+    },
+    {
+        "merged": "/home/kevin/appaticaconductor/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-mdpi/logo.png",
+        "source": "/home/kevin/appaticaconductor/platforms/android/app/src/main/res/drawable-mdpi/logo.png"
+    },
+    {
+        "merged": "/home/kevin/appaticaconductor/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-mdpi/menu.png",
+        "source": "/home/kevin/appaticaconductor/platforms/android/app/src/main/res/drawable-mdpi/menu.png"
+    },
+    {
+        "merged": "/home/kevin/appaticaconductor/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-mdpi/icon.png",
+        "source": "/home/kevin/appaticaconductor/platforms/android/app/src/main/res/drawable-mdpi/icon.png"
+    }
+]

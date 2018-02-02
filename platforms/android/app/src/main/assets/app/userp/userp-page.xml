@@ -1,0 +1,84 @@
+<Page
+    class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
+    xmlns:drawer="shared/drawer"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar actionbar-color">
+        <!-- 
+        Use the NavigationButton as a side-drawer button in Android because ActionItems are shown on the right side of the ActionBar
+        -->
+        <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
+        <!-- 
+        Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
+        -->
+        <ActionItem icon="res://navigation/menu" 
+            android:visibility="collapsed" 
+            tap="onDrawerButtonTap"
+            ios.position="left">
+        </ActionItem>
+        <Image src="~/image/logo_atica_app.png" class="action-image"></Image>
+    </ActionBar>
+
+    <!--
+    RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
+    Learn more about the RadSideDrawer UI component and how it can be customized in this documentation article:
+    http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawer/getting-started
+    The RadSideDrawer component is designed to be used as a root element to the <Page> and
+    it shouldn't have any other siblings other than the <ActionBar> component.
+    -->
+    <nsDrawer:RadSideDrawer id="sideDrawer" showOverNavigation="true">
+        <!--
+        Use the RadSideDrawer.drawerTransition component to change the open/close animation of the drawer.
+        -->
+        <nsDrawer:RadSideDrawer.drawerTransition>
+            <nsDrawer:SlideInOnTopTransition/>
+        </nsDrawer:RadSideDrawer.drawerTransition>
+
+        <!--
+        Use the RadSideDrawer.drawerContent component to display the content of the app drawer on this page.
+        Always wrap content in a layout component.
+        -->
+        <nsDrawer:RadSideDrawer.drawerContent>
+            <StackLayout>
+                <!--
+                Use {N} custom components to reuse UI across your mobile app.
+                The drawer custom component defined in "/shared/drawer" holds the contents of the app drawer.
+                Learn more about custom components and how they can be used in this documentation article:
+                http://docs.nativescript.org/ui/basics#custom-components
+                -->
+                <drawer:drawer-fragment selectedPage="userp"/>
+            </StackLayout>
+        </nsDrawer:RadSideDrawer.drawerContent>
+
+        <!--
+        Use the RadSideDrawer.mainContent component to display the content of the page when you have an app drawer.
+        Always wrap content in a layout component.
+        -->
+        <nsDrawer:RadSideDrawer.mainContent>
+	<ScrollView>
+		<StackLayout backgroundColor="#4A3A5B">
+			<!--Add your page content here-->
+
+			<GridLayout width="500" height="50" backgroundColor="#2D1A45">
+			    <Label text="Perfil de Usuario" color="white" style="width: 90%; font-size:15em"/>
+			</GridLayout>
+			<TextField color="white" class="m-t-10 m-b-10 m-l-15 m-r-15" autocorrect="false" autocapitalization="none" text="{{ sessionId }}" style="visibility: hidden;">
+			</TextField>
+			<TextField color="white" class="m-t-10 m-b-10 m-l-15 m-r-15" autocorrect="false" autocapitalization="none" text="{{ id }}" style="visibility: hidden;">
+			</TextField>
+			<TextField color="white" class="m-t-10 m-b-10 m-l-15 m-r-15" hint="Nombre" autocorrect="false" autocapitalization="none"
+			 text="{{ nombrec }}" ></TextField>
+			<TextField color="white" class="m-t-10 m-b-10 m-l-15 m-r-15" hint="Apellido" autocorrect="false" autocapitalization="none" text="{{ apellidoc }}">
+			</TextField>
+			<TextField color="white" class="m-t-10 m-b-10 m-l-15 m-r-15" hint="Identificacion" autocorrect="false" autocapitalization="none" text="{{ identificacionc }}">
+			</TextField>
+
+			<Button text="Guardar" color="white" tap="editarPerfil" backgroundColor="#2D1A45" width="120"/>
+
+		</StackLayout>
+	</ScrollView>
+        </nsDrawer:RadSideDrawer.mainContent>
+    </nsDrawer:RadSideDrawer>
+</Page>

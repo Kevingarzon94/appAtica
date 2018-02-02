@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.5.0/4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83/okhttp-3.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
+        <dex dex="/home/kevin/appaticaconductor/platforms/android/app/build/intermediates/pre-dexed/F0F1F2/debug/okhttp-3.5.0_dd172a91eb09be56530a783d361dc247f5d3b9e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/home/kevin/appaticaconductor/platforms/android/app/build/intermediates/pre-dexed/F0F1F2/debug/okio-1.11.0_ea7cf0e755a8c4389e672ac44af80a12f600d886.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/5caf75c9122ea21de663eaab3c82b363d1e589f8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="746274223beb11b1cda7854d7eec3038695c2c93">
+        <dex dex="/home/kevin/appaticaconductor/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_381e5877c41dd6b36911a0bd7e16b956e9af0bf4.jar" />
+    </item>
+
+</items>
